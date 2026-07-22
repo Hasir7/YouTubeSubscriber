@@ -1,115 +1,137 @@
-
 # Get YouTube Subscriber
-(AlmaBetter__Capstone__Project)
+(AlmaBetter Capstone Project)
 
-This project is a backend application built with Express.js and Node.js that allows users to retrieve subscriber information from YouTube channels.
+This project is a backend application made using Express.js and Node.js. It helps users get subscriber details from YouTube channels.
 
 ## Features
 
-- Retrieve subscriber information including Name, ID subscription date, and subscribed channel.
-- Get subscriber names along with their respective channels.
-- Retrieve subscriber information for a specific user using their ID.
+- Get subscriber details like Name, ID, subscription date, and subscribed channel.
+- Get subscriber names with their channels.
+- Get details of a specific subscriber using subscriber ID.
 
 ## Installation
 
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/get-youtube-subscriber.git
+git clone https://github.com/Hasir7/YouTubeSubscriber
 ```
 
-2. Navigate to the project directory:
+2. Go to the project folder:
 
 ```bash
-cd get-youtube-subscriber
+cd YouTubeSubscriber
 ```
 
-3. Install dependencies:
+3. Install all required packages:
 
 ```bash
 npm install
 ```
 
-
 ## Usage
 
-### Starting the Server
+### Start the Server
 
-Run the following command to start the server:
+Run this command to start the server:
 
 ```bash
 npm start
 ```
 
-By default, the server will run on port `3000`. You can access the endpoints at `http://localhost:3000`.
+The server will run on port `3000`.
 
-### Endpoints
+You can access the application at:
 
-#### 1. Get Subscriber Information
+```bash
+http://localhost:3000
+```
 
-- **Route:** `/subscribers`
-- **Method:** `GET`
-- **Description:** Retrieves subscriber information as an array of all subscribers in the database.
-- (http://localhost:3000/subscribers)
+## API Endpoints
 
-#### 2. Get Subscriber Names
+### 1. Get All Subscribers
 
-- **Route:** `/subscribers/names`
-- **Method:** `GET`
-- **Description:** Retrieves subscriber names along with their respective channels.
-- (http://localhost:3000/subscribers/names)
+**Route:** `/subscribers`  
+**Method:** `GET`
 
-#### 3. Get Subscriber Information by ID
+**Description:**  
+This API gives all subscriber details from the database.
 
-- **Route:** `/subscribers/:id`
-- **Method:** `GET`
-- **Description:** Retrieves subscriber information for a specific user using their ID.
-- (http://localhost:3000/subscribers/:id)
+Example:
 
-Replace `:id` with the actual subscriber ID.
+```bash
+http://localhost:3000/subscribers
+```
 
-## Contributing
+---
 
-Contributions are welcome! If you'd like to contribute to this project, please follow these steps:
+### 2. Get Subscriber Names
 
-1. Fork the repository.
-2. Create your feature branch (`git checkout -b feature/your-feature`).
-3. Commit your changes (`git commit -am 'Add some feature'`).
-4. Push to the branch (`git push origin feature/your-feature`).
-5. Create a new Pull Request.
+**Route:** `/subscribers/names`  
+**Method:** `GET`
 
-## Application Folder Structure
+**Description:**  
+This API gives subscriber names with their YouTube channels.
 
-        Get-Youtube_subscribers  
-├─ src                   
-│  ├─ models             
-│  │  └─ subscribers.js  
-│  ├─ app.js             
-│  ├─ createDatabase.js  
-│  ├─ data.js            
-│  ├─ index.html         
-│  └─ youtube.png        
-├─ index.js              
-├─ package-lock.json     
-├─ package.json          
-├─ Readme.md 
+Example:
 
+```bash
+http://localhost:3000/subscribers/names
+```
 
-## Dependecies used in this project:
+---
 
-* Express
-* Mongoose
-* nodemon
-* dotenv
+### 3. Get Subscriber Details By ID
+
+**Route:** `/subscribers/:id`  
+**Method:** `GET`
+
+**Description:**  
+This API gives details of one subscriber using their ID.
+
+Example:
+
+```bash
+http://localhost:3000/subscribers/:id
+```
+
+Replace `:id` with the subscriber ID.
+
+## Project Folder Structure
+
+```
+Get-Youtube_subscribers
+
+├─ src
+│  ├─ models
+│  │  └─ subscribers.js
+│  ├─ app.js
+│  ├─ createDatabase.js
+│  ├─ data.js
+│  ├─ index.html
+│  └─ youtube.png
+│
+├─ index.js
+├─ package-lock.json
+├─ package.json
+└─ Readme.md
+```
+
+## Dependencies Used
+
+- Express
+- Mongoose
+- Nodemon
+- dotenv
 
 ## Deployment
 
-*_Live link_* <br/>
+Live link:
 
-https://get-youtube-subscriber-nx8k.onrender.com
+https://youtubesubscriber-4lq7.onrender.com
 
+## Acknowledgment
 
-## Acknowledgments
+Thanks to the Express.js and Node.js communities for their useful libraries and documentation.
 
-Special thanks to [Express.js](https://expressjs.com/) and [Node.js](https://nodejs.org/) communities for their excellent libraries and documentation.
 
