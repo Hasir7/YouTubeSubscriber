@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>YouTube Subscribers API</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+
+background:linear-gradient(135deg,#0f0f0f,#181818,#202020);
+
+min-height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+padding:40px;
+
+color:white;
+
+}
+
+.container{
+
+width:100%;
+max-width:1000px;
+
+background:rgba(255,255,255,.05);
+
+backdrop-filter:blur(12px);
+
+border:1px solid rgba(255,255,255,.15);
+
+border-radius:20px;
+
+padding:45px;
+
+box-shadow:0 20px 60px rgba(0,0,0,.5);
+
+}
+
+.hero{
+
+text-align:center;
+
+margin-bottom:40px;
+
+}
+
+.logo{
+
+font-size:70px;
+
+}
+
+.hero h1{
+
+font-size:42px;
+
+margin-top:10px;
+
+}
+
+.hero p{
+
+color:#c8c8c8;
+
+font-size:18px;
+
+margin-top:10px;
+
+}
+
+.status{
+
+margin-top:20px;
+
+display:inline-block;
+
+padding:8px 18px;
+
+background:#17c964;
+
+border-radius:30px;
+
+font-size:14px;
+
+font-weight:600;
+
+}
+
+h2{
+
+margin-bottom:20px;
+
+font-size:28px;
+
+}
+
+.endpoint{
+
+background:#252525;
+
+border-left:5px solid #ff0000;
+
+padding:20px;
+
+border-radius:12px;
+
+margin-bottom:18px;
+
+transition:.3s;
+
+}
+
+.endpoint:hover{
+
+transform:translateY(-6px);
+
+box-shadow:0 12px 25px rgba(255,0,0,.25);
+
+}
+
+.method{
+
+display:inline-block;
+
+background:#ff0000;
+
+padding:6px 14px;
+
+border-radius:8px;
+
+font-weight:600;
+
+margin-right:10px;
+
+}
+
+.url{
+
+font-size:18px;
+
+color:white;
+
+word-break:break-all;
+
+}
+
+.desc{
+
+margin-top:10px;
+
+color:#bfbfbf;
+
+}
+
+.tech{
+
+margin-top:45px;
+
+display:flex;
+
+justify-content:center;
+
+gap:15px;
+
+flex-wrap:wrap;
+
+}
+
+.tech span{
+
+background:#303030;
+
+padding:12px 20px;
+
+border-radius:30px;
+
+}
+
+footer{
+
+margin-top:40px;
+
+text-align:center;
+
+color:#9f9f9f;
+
+font-size:14px;
+
+}
+
+@media(max-width:700px){
+
+.hero h1{
+
+font-size:32px;
+
+}
+
+.url{
+
+font-size:15px;
+
+}
+
+.container{
+
+padding:25px;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="hero">
+
+<div class="logo">▶️</div>
+
+<h1>YouTube Subscribers API</h1>
+
+<p>A REST API built using Node.js, Express.js & MongoDB Atlas.</p>
+
+<div class="status">
+🟢 API Online
+</div>
+
+</div>
+
+<h2>Available Endpoints</h2>
+
+<div class="endpoint">
+
+<div>
+
+<span class="method">GET</span>
+
+<span class="url">/subscribers</span>
+
+</div>
+
+<div class="desc">
+
+Returns all subscribers from the database.
+
+</div>
+
+</div>
+
+<div class="endpoint">
+
+<div>
+
+<span class="method">GET</span>
+
+<span class="url">/subscribers/names</span>
+
+</div>
+
+<div class="desc">
+
+Returns only subscriber names and subscribed channels.
+
+</div>
+
+</div>
+
+<div class="endpoint">
+
+<div>
+
+<span class="method">GET</span>
+
+<span class="url">/subscribers/:id</span>
+
+</div>
+
+<div class="desc">
+
+Returns subscriber details using the MongoDB Object ID.
+
+</div>
+
+</div>
+
+<div class="tech">
+
+<span>🟢 Node.js</span>
+
+<span>⚡ Express.js</span>
+
+<span>🍃 MongoDB Atlas</span>
+
+<span>☁️ Render</span>
+
+</div>
+
+<footer>
+
+Made with ❤️ by <strong>Mohamed Hasir</strong><br><br>
+
+© 2026 YouTube Subscribers API
+
+</footer>
+
+</div>
+
+</body>
+</html>
